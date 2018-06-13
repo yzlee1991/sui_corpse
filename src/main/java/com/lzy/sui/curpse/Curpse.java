@@ -41,7 +41,7 @@ public class Curpse {
 
 	private int delayTime = 100;
 
-	private long headTime = 1500;
+	private long headTime = 15000;
 
 	private long lastTime = clock.now();
 
@@ -104,7 +104,7 @@ public class Curpse {
 			//睡眠报错直接重连
 			try {
 				Thread.sleep(5000);
-				System.out.println("重连");
+				System.out.println("尝试重连服务器...");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
